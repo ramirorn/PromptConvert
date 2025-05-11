@@ -26,7 +26,14 @@ do {
             } /*Verifica si el numero ingresado es un valor numerico y si es mayor a 0*/
             let usd = convertCurrency(pesos);
             alert(`Equivale a: ${usd.toFixed(2)} USD`); /*llama a la funcion covertCurrency para hacer el equivalente en USD y a ese resultado solo utiliza los primeros 2 decimales */
-
+            /*Carga en el array historial los datos de la divisa */
+            historial.push({
+                tipo: "Divisa",
+                entrada: `${pesos} ARS`,
+                salida: `${usd.toFixed(2)} USD`,
+                fecha: new Date().toLocaleDateString()
+            });
+            break;
     }
 
 } while (opcion !== "2")
