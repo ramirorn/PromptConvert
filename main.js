@@ -9,9 +9,6 @@ function menu() {
     let opcion;
 }
 
-
-
-
 do {
     opcion = prompt("Seleccione una opción para operar: \n1) Divisa (ARS -> USD)\n2) Salir");
     switch (opcion) {
@@ -43,4 +40,6 @@ do {
             default:
                 alert("Opción inválida, Intente de nuevo");
     }
-} while (opcion !== "2")
+} while (opcion !== "2");
+
+menu();
