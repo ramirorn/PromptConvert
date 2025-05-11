@@ -34,6 +34,13 @@ do {
                 fecha: new Date().toLocaleDateString()
             });
             break;
+            case "2":
+                /*Opcion Salir*/
+                alert("Revise la consola para ver el historial");
+                console.log("Historial de conversiones:")
+                console.table(historial); /*Muestra los datos en forma de tabla en la consola*/
+                break;
+            default:
+                alert("Opción inválida, Intente de nuevo");
     }
-
 } while (opcion !== "2")
